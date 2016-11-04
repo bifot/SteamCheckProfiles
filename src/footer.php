@@ -1,6 +1,6 @@
 ﻿<footer class="main_footer">
 	<p>
-		© 2016 The Check Pro's Profiles v3.1. Developed by <a href="http://bifot.ru/">Mikhail Semin</a>.
+		© 2016 The Check Pro's Profiles v3.1. Developed by <a href="http://bifot.ru/">Mikhail Semin</a>. <a href="https://github.com/bifot/SteamCheckProfiles/">Open source</a>.
 	</p>
 	<div class="li"><!--LiveInternet counter--><script type="text/javascript"><!--
 document.write("<a href='//www.liveinternet.ru/click' "+
@@ -17,8 +17,9 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <script>
 function newMyWindow(e) {
-	var h = 500,
-	    w = 500;
+	var h = 500;
+  var w = 500;
+  
 	window.open(e, '', 'scrollbars=1,height='+Math.min(h, screen.availHeight)+',width='+Math.min(w, screen.availWidth)+',left='+Math.max(0, (screen.availWidth - w)/2)+',top='+Math.max(0, (screen.availHeight - h)/2));
 }
 </script>

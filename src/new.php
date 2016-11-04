@@ -21,6 +21,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 <?php
+
 if(isset($_POST)) {
 	$xml = $_POST["url"] . "?xml=1";
 	$url = simplexml_load_file($xml); // читаем XML
