@@ -298,6 +298,82 @@ input[type=submit]:active {
   box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .35);
 }
 
+.modal_share {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: -20px 0 0 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  z-index: 9999;
+}
+
+.modal_share .content_share {
+  max-width: 520px;
+  margin: 150px auto;
+  padding: 0 45px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.modal_share .content_share .close {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.modal_share .content_share h1 {
+  padding: 10px 0;
+}
+
+.modal_share .icons_share {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.modal_share .icons_share a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.modal_share .icons_share a:last-child {}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+  
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 @media all and (max-width: 480px) {
   .all-list {
     width: 80%;
