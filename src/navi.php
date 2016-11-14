@@ -3,19 +3,21 @@
 <?php
 
 $xmlURL = array(
-	'76561198116523276', // flamie navi
-	'76561198019328472', // zeus navi
-	'76561197963914156', // seized navi
-	'76561197972331023', // guardian navi
-	'76561197983695262', // edward navi
+  '76561198116523276', // flamie navi
+  // '76561198019328472', // zeus navi
+  '76561198034202275', // s1mple navi
+  '76561197963914156', // seized navi
+  '76561197972331023', // guardian navi
+  '76561197983695262', // edward navi
 );
 
 $twitter = array(
-	'flamiecs', // flamie
-	'navizeus4444', // zeus
-	'seizedwf', // seized
-	'naviguardian', // guardian
-	'iaonnsukhariev', // edward
+  'flamiecs', // flamie
+  //'navizeus4444', // zeus
+  's1mpleo', // simple
+  'seizedwf', // seized
+  'naviguardian', // guardian
+  'iaonnsukhariev', // edward
 );
 
 echo '<div class="all">';
