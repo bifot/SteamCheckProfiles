@@ -7,7 +7,8 @@ $xmlURL = array(
 	'76561197996997916', // worldedit f3
 	'76561198013523865', // blade f3
 	'76561197965932989', // markeloff f3
-	'76561198013596656', // shara f3
+	// '76561198013596656', // shara f3
+	'76561198044045107' // electronic
 );
 
 $twitter = array(
@@ -15,7 +16,7 @@ $twitter = array(
 	'worldedit321321',
 	'',
 	'yegormarkeloff', 
-	'sharaoficial',
+	// 'sharaoficial',
 );
 
 echo '<div class="all">';
