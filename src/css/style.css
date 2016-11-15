@@ -1,6 +1,4 @@
-﻿@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
-
-* {
+﻿* {
   margin: 0;
   padding: 0;
 }
@@ -108,20 +106,22 @@ img {
 .all_list_flex {
   display: flex;
   flex-direction: row;
-  width: 95%;
-  max-width: 960px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 940px;
+  margin: 15px auto;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .all_list_flex .team_name {
-  max-width: 240px;
-  transition: all .15s;
+  max-width: 120px;
+  padding: 10px 20px;
+  transition: all .25s;
 }
 
 .all_list_flex .team_name:hover {
-  margin-top: -5px;
+  max-width: 130px;
+  padding: 5px 15px;
 }
 
 .all-list {
@@ -244,10 +244,18 @@ img {
 .main_footer {
   padding: 0 20px 20px 20px;
   text-align: center;
+}
+
+.opacity {
+  transition: all .25s;
   opacity: .25;
 }
 
-.main_footer:hover {
+.opacity p {
+  padding: 2px 0;
+}
+
+.opacity:hover {
   opacity: 1;
 }
 
@@ -379,6 +387,11 @@ input[type=submit]:active {
     width: 80%;
     max-width: 420px;
     padding: 5%;
+  }
+
+  .all_list_flex .team_name:hover {
+    max-width: inherit;
+    padding: inherit;
   }
 }
 
