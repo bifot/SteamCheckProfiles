@@ -19,7 +19,9 @@ $twitter = array(
 );
 
 echo '<div class="all">';
+
 include 'function.php';
+
 echo "</div>";
 
 ?>

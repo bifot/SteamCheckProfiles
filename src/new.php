@@ -1,24 +1,23 @@
 <?php include 'header.php'; ?>
 
-<div class="all-list">
-	<h1>New player</h1>
-	<p>URL should be made up of numbers! <a href="http://www.steamid.ru/">Generate</a> to numbers.</p>
-	<p style="padding: 10px 0;">
-		<strong>Good:</strong><br/>
-		<code class="green">http://steamcommunity.com/profiles/76561198102701267/</code>
-		<strong>Bad:</strong><br/>
-		<code class="red">http://steamcommunity.com/profiles/bifot/</code>
-	</p>
-	<form action="" method="POST">
-		
-		<input type="text" name="url" required="" placeholder="URL (e.g. http://steamcommunity.com/profiles/76561198102701267/)">
+	<div class="all-list">
+		<h1>New player</h1>
+		<p>URL should be made up of numbers! <a href="http://www.steamid.ru/">Generate</a> to numbers.</p>
+		<p style="padding: 10px 0;">
+			<strong>Good:</strong><br/>
+			<code class="green">http://steamcommunity.com/profiles/76561198102701267/</code>
+			<strong>Bad:</strong><br/>
+			<code class="red">http://steamcommunity.com/profiles/bifot/</code>
+		</p>
+		<form action="" method="POST">
+			
+			<input type="text" name="url" required="" placeholder="URL (e.g. http://steamcommunity.com/profiles/76561198102701267/)">
 
-		<input type="submit" placeholder="Send">
+			<input type="submit" placeholder="Send">
 
-	</form>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 <?php
 
@@ -65,7 +64,6 @@ EOT;
 
 	echo "</div></div>";
 }
-
 ?>
 
 <?php include 'footer.php'; ?>

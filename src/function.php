@@ -1,4 +1,5 @@
 <?php
+
 foreach (array_combine($xmlURL, $twitter) as $value => $accs) { // выводим весь массив
   $xml = "http://steamcommunity.com/profiles/{$value}/?xml=1";
   $url = simplexml_load_file($xml); // читаем XML
@@ -15,14 +16,14 @@ foreach (array_combine($xmlURL, $twitter) as $value => $accs) { // выводи�
   $twitt = "https://twitter.com/{$accs}";
 
   switch($status) { // присваиваем классы надписи со статусом
-    case 'offline' :
-      $status = "<span class='status offline-status'>offline</span>";
+    case "offline":
+      $status = "<span class=\"status offline-status\">offline</span>";
       break;
-    case 'online' :
-      $status = "<span class='status online-status'>online</span>";
+    case "online":
+      $status = "<span class=\"status online-status\">online</span>";
       break;
-    case in-'game' :
-      $status = "<span class='status ingame-status'>in-game</span>";
+    case "in-game":
+      $status = "<span class=\"status ingame-status\">in-game</span>";
       break;
     }
 
@@ -31,11 +32,11 @@ foreach (array_combine($xmlURL, $twitter) as $value => $accs) { // выводи�
 echo <<<EOT
   <div class="block-player">
     <a href="$twitt"><img class="twitter-icon" src="/img/twitter-icon.png"/></a>
-    <a href="{$getURL}">
-      <img src="{$avatar}"/>
+    <a href="$getURL">
+      <img src="$avatar"/>
     </a>
-    <h1 class="h1-players"><a href={$getURL}>{$login}</a></h1>
-    <p>{$status} <a href={$getGameURL}>{$gamename}</a></p>
+    <h1 class="h1-players"><a href="$getURL">$login</a></h1>
+    <p>$status <a href="$getGameURL">$gamename</a></p>
 EOT;
 
   if ($active == 0) {
@@ -45,6 +46,6 @@ EOT;
   }
 
   echo "</div>";
-
 }
+
 ?>

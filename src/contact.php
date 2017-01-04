@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+
 <div class="all-list">
 	<h1>Contact</h1>
 	<p>If you want to share some player, I have not yet added, you can do this in several ways:</p>
